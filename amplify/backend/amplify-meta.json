@@ -1,0 +1,113 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-steadi-dev-125855-authRole",
+      "UnauthRoleArn": "arn:aws:iam::477419570711:role/amplify-steadi-dev-125855-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::477419570711:role/amplify-steadi-dev-125855-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-steadi-dev-125855-deployment",
+      "UnauthRoleName": "amplify-steadi-dev-125855-unauthRole",
+      "StackName": "amplify-steadi-dev-125855",
+      "StackId": "arn:aws:cloudformation:us-east-1:477419570711:stack/amplify-steadi-dev-125855/dac23c40-dedb-11ed-a263-0a399bf1e80f",
+      "AmplifyAppId": "d2btil0tdiwwlg",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-steadi-dev-125855-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "function": {
+    "userLambda1": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2023-04-19T23:26:47.194Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-19T23:26:47.915Z",
+      "distZipFilename": "userLambda1-77466d4d7952794d7872-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-steadi-dev-125855-deployment",
+        "s3Key": "amplify-builds/userLambda1-77466d4d7952794d7872-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-steadi-dev-125855-deployment/amplify-cfn-templates/function/userLambda1-cloudformation-template.json",
+        "logicalId": "functionuserLambda1"
+      },
+      "lastPushTimeStamp": "2023-04-19T23:27:54.031Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::477419570711:role/steadiLambdaRole9d15dad3-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:477419570711:function:userLambda1-dev",
+        "Name": "userLambda1-dev",
+        "LambdaExecutionRole": "steadiLambdaRole9d15dad3-dev"
+      },
+      "lastPushDirHash": "TEXNX57nErf2YCfgPYWPN868d94="
+    }
+  },
+  "auth": {
+    "steadi": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-steadi-dev-125855-deployment/amplify-cfn-templates/auth/steadi-cloudformation-template.json",
+        "logicalId": "authsteadi"
+      },
+      "lastPushTimeStamp": "2023-04-19T23:27:54.031Z",
+      "output": {
+        "UserPoolId": "us-east-1_MJuTIrg7h",
+        "AppClientIDWeb": "1gcac4fnc4b1bpulmevl91vtoc",
+        "AppClientID": "7bfl83b2tva6qs70our2vlovuu",
+        "IdentityPoolId": "us-east-1:2be1fe47-511a-4cb0-8b0a-b196822be809",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:477419570711:userpool/us-east-1_MJuTIrg7h",
+        "IdentityPoolName": "steadi_identitypool_51cf04d3__dev",
+        "UserPoolName": "steadi_userpool_51cf04d3"
+      },
+      "lastPushDirHash": "ZT9b7cm7+mlYAzjTkzYJadmBCBA="
+    }
+  },
+  "api": {
+    "api9db7ac8c": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "userLambda1",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-steadi-dev-125855-deployment/amplify-cfn-templates/api/api9db7ac8c-cloudformation-template.json",
+        "logicalId": "apiapi9db7ac8c"
+      },
+      "lastPushTimeStamp": "2023-04-19T23:27:54.031Z",
+      "output": {
+        "ApiName": "api9db7ac8c",
+        "RootUrl": "https://qdc5y1unx9.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "qdc5y1unx9"
+      },
+      "lastPushDirHash": "rbsbvYio5IMXVYN4OmqL6WF3nuE="
+    }
+  }
+}

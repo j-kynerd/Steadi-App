@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CDCD9102969C97200DBD5ED /* SteadiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD90F2969C97200DBD5ED /* SteadiApp.swift */; };
+		0CDCD9122969C97200DBD5ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD9112969C97200DBD5ED /* ContentView.swift */; };
+		0CDCD9142969C97400DBD5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDCD9132969C97400DBD5ED /* Assets.xcassets */; };
+		0CDCD9172969C97400DBD5ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDCD9162969C97400DBD5ED /* Preview Assets.xcassets */; };
+		0CDCD9212969C97400DBD5ED /* SteadiMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD9202969C97400DBD5ED /* SteadiMVPTests.swift */; };
+		0CDCD92B2969C97400DBD5ED /* SteadiMVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD92A2969C97400DBD5ED /* SteadiMVPUITests.swift */; };
+		0CDCD92D2969C97400DBD5ED /* SteadiMVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD92C2969C97400DBD5ED /* SteadiMVPUITestsLaunchTests.swift */; };
+		0CE39CF029F066DC00809491 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CEF29F066DC00809491 /* AWSAPIPlugin */; };
+		0CE39CF229F066DC00809491 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CF129F066DC00809491 /* AWSCognitoAuthPlugin */; };
+		0CE39CF429F066DC00809491 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CF329F066DC00809491 /* AWSDataStorePlugin */; };
+		0CE39CF629F066DC00809491 /* AWSPinpointAnalyticsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CF529F066DC00809491 /* AWSPinpointAnalyticsPlugin */; };
+		0CE39CF829F066DC00809491 /* AWSPinpointPushNotificationsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CF729F066DC00809491 /* AWSPinpointPushNotificationsPlugin */; };
+		0CE39CFA29F066DC00809491 /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CF929F066DC00809491 /* AWSPluginsCore */; };
+		0CE39CFC29F066DC00809491 /* AWSPredictionsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CFB29F066DC00809491 /* AWSPredictionsPlugin */; };
+		0CE39CFE29F066DC00809491 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CFD29F066DC00809491 /* AWSS3StoragePlugin */; };
+		0CE39D0029F066DC00809491 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE39CFF29F066DC00809491 /* Amplify */; };
+		0CE39D0229F067F600809491 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE39D0129F067F600809491 /* UserController.swift */; };
+		0CEE54A429EF6E8B00748A60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE54A329EF6E8B00748A60 /* User.swift */; };
+		0CEE54A629EF70A700748A60 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE54A529EF70A700748A60 /* LoginView.swift */; };
+		0CEE54A829EF723C00748A60 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE54A729EF723C00748A60 /* UserView.swift */; };
+		0CEE54AB29F0490E00748A60 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE54AA29F0490E00748A60 /* JournalEntry.swift */; };
+		0CEE54AE29F04AF100748A60 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE54AD29F04AF100748A60 /* JournalEntryView.swift */; };
+		0CEE54B029F04D4200748A60 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE54AF29F04D4200748A60 /* CreateAccountView.swift */; };
+		2C8E86572CBF49D99689941B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ACC1C73458D65139FD30535 /* awsconfiguration.json */; };
+		54E14174FF01F62A659475E1 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 524B6ACE89DB16AB5C78DB14 /* amplifyconfiguration.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CDCD91D2969C97400DBD5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CDCD9042969C97200DBD5ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CDCD90B2969C97200DBD5ED;
+			remoteInfo = SteadiMVP;
+		};
+		0CDCD9272969C97400DBD5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CDCD9042969C97200DBD5ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CDCD90B2969C97200DBD5ED;
+			remoteInfo = SteadiMVP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CDCD90C2969C97200DBD5ED /* Steadi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steadi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CDCD90F2969C97200DBD5ED /* SteadiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteadiApp.swift; sourceTree = "<group>"; };
+		0CDCD9112969C97200DBD5ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0CDCD9132969C97400DBD5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CDCD9162969C97400DBD5ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CDCD91C2969C97400DBD5ED /* SteadiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteadiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CDCD9202969C97400DBD5ED /* SteadiMVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteadiMVPTests.swift; sourceTree = "<group>"; };
+		0CDCD9262969C97400DBD5ED /* SteadiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteadiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CDCD92A2969C97400DBD5ED /* SteadiMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteadiMVPUITests.swift; sourceTree = "<group>"; };
+		0CDCD92C2969C97400DBD5ED /* SteadiMVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteadiMVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0CE39D0129F067F600809491 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		0CEE54A329EF6E8B00748A60 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0CEE54A529EF70A700748A60 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0CEE54A729EF723C00748A60 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		0CEE54AA29F0490E00748A60 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		0CEE54AD29F04AF100748A60 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
+		0CEE54AF29F04D4200748A60 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		524B6ACE89DB16AB5C78DB14 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		7ACC1C73458D65139FD30535 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CDCD9092969C97200DBD5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CE39D0029F066DC00809491 /* Amplify in Frameworks */,
+				0CE39CF429F066DC00809491 /* AWSDataStorePlugin in Frameworks */,
+				0CE39CFC29F066DC00809491 /* AWSPredictionsPlugin in Frameworks */,
+				0CE39CF629F066DC00809491 /* AWSPinpointAnalyticsPlugin in Frameworks */,
+				0CE39CFA29F066DC00809491 /* AWSPluginsCore in Frameworks */,
+				0CE39CF829F066DC00809491 /* AWSPinpointPushNotificationsPlugin in Frameworks */,
+				0CE39CF029F066DC00809491 /* AWSAPIPlugin in Frameworks */,
+				0CE39CF229F066DC00809491 /* AWSCognitoAuthPlugin in Frameworks */,
+				0CE39CFE29F066DC00809491 /* AWSS3StoragePlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CDCD9192969C97400DBD5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CDCD9232969C97400DBD5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CDCD9032969C97200DBD5ED = {
+			isa = PBXGroup;
+			children = (
+				0CDCD90E2969C97200DBD5ED /* Steadi */,
+				0CDCD91F2969C97400DBD5ED /* SteadiTests */,
+				0CDCD9292969C97400DBD5ED /* SteadiUITests */,
+				0CDCD90D2969C97200DBD5ED /* Products */,
+				EA842977D8FC4BC5463EE7DE /* AmplifyConfig */,
+			);
+			sourceTree = "<group>";
+		};
+		0CDCD90D2969C97200DBD5ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD90C2969C97200DBD5ED /* Steadi.app */,
+				0CDCD91C2969C97400DBD5ED /* SteadiTests.xctest */,
+				0CDCD9262969C97400DBD5ED /* SteadiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CDCD90E2969C97200DBD5ED /* Steadi */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD90F2969C97200DBD5ED /* SteadiApp.swift */,
+				0CE39D0329F0799D00809491 /* controllers */,
+				0CEE54A929F0474E00748A60 /* views */,
+				0CDCD9132969C97400DBD5ED /* Assets.xcassets */,
+				0CEE54AC29F0491500748A60 /* models */,
+				0CDCD9152969C97400DBD5ED /* Preview Content */,
+			);
+			path = Steadi;
+			sourceTree = "<group>";
+		};
+		0CDCD9152969C97400DBD5ED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD9162969C97400DBD5ED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CDCD91F2969C97400DBD5ED /* SteadiTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD9202969C97400DBD5ED /* SteadiMVPTests.swift */,
+			);
+			path = SteadiTests;
+			sourceTree = "<group>";
+		};
+		0CDCD9292969C97400DBD5ED /* SteadiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD92A2969C97400DBD5ED /* SteadiMVPUITests.swift */,
+				0CDCD92C2969C97400DBD5ED /* SteadiMVPUITestsLaunchTests.swift */,
+			);
+			path = SteadiUITests;
+			sourceTree = "<group>";
+		};
+		0CE39D0329F0799D00809491 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CE39D0129F067F600809491 /* UserController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		0CEE54A929F0474E00748A60 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0CEE54A529EF70A700748A60 /* LoginView.swift */,
+				0CEE54A729EF723C00748A60 /* UserView.swift */,
+				0CEE54AD29F04AF100748A60 /* JournalEntryView.swift */,
+				0CEE54AF29F04D4200748A60 /* CreateAccountView.swift */,
+				0CDCD9112969C97200DBD5ED /* ContentView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		0CEE54AC29F0491500748A60 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0CEE54AA29F0490E00748A60 /* JournalEntry.swift */,
+				0CEE54A329EF6E8B00748A60 /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		EA842977D8FC4BC5463EE7DE /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				7ACC1C73458D65139FD30535 /* awsconfiguration.json */,
+				524B6ACE89DB16AB5C78DB14 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CDCD90B2969C97200DBD5ED /* Steadi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CDCD9302969C97400DBD5ED /* Build configuration list for PBXNativeTarget "Steadi" */;
+			buildPhases = (
+				0CDCD9082969C97200DBD5ED /* Sources */,
+				0CDCD9092969C97200DBD5ED /* Frameworks */,
+				0CDCD90A2969C97200DBD5ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Steadi;
+			packageProductDependencies = (
+				0CE39CEF29F066DC00809491 /* AWSAPIPlugin */,
+				0CE39CF129F066DC00809491 /* AWSCognitoAuthPlugin */,
+				0CE39CF329F066DC00809491 /* AWSDataStorePlugin */,
+				0CE39CF529F066DC00809491 /* AWSPinpointAnalyticsPlugin */,
+				0CE39CF729F066DC00809491 /* AWSPinpointPushNotificationsPlugin */,
+				0CE39CF929F066DC00809491 /* AWSPluginsCore */,
+				0CE39CFB29F066DC00809491 /* AWSPredictionsPlugin */,
+				0CE39CFD29F066DC00809491 /* AWSS3StoragePlugin */,
+				0CE39CFF29F066DC00809491 /* Amplify */,
+			);
+			productName = SteadiMVP;
+			productReference = 0CDCD90C2969C97200DBD5ED /* Steadi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CDCD91B2969C97400DBD5ED /* SteadiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CDCD9332969C97400DBD5ED /* Build configuration list for PBXNativeTarget "SteadiTests" */;
+			buildPhases = (
+				0CDCD9182969C97400DBD5ED /* Sources */,
+				0CDCD9192969C97400DBD5ED /* Frameworks */,
+				0CDCD91A2969C97400DBD5ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CDCD91E2969C97400DBD5ED /* PBXTargetDependency */,
+			);
+			name = SteadiTests;
+			productName = SteadiMVPTests;
+			productReference = 0CDCD91C2969C97400DBD5ED /* SteadiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CDCD9252969C97400DBD5ED /* SteadiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CDCD9362969C97400DBD5ED /* Build configuration list for PBXNativeTarget "SteadiUITests" */;
+			buildPhases = (
+				0CDCD9222969C97400DBD5ED /* Sources */,
+				0CDCD9232969C97400DBD5ED /* Frameworks */,
+				0CDCD9242969C97400DBD5ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CDCD9282969C97400DBD5ED /* PBXTargetDependency */,
+			);
+			name = SteadiUITests;
+			productName = SteadiMVPUITests;
+			productReference = 0CDCD9262969C97400DBD5ED /* SteadiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CDCD9042969C97200DBD5ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					0CDCD90B2969C97200DBD5ED = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					0CDCD91B2969C97400DBD5ED = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 0CDCD90B2969C97200DBD5ED;
+					};
+					0CDCD9252969C97400DBD5ED = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 0CDCD90B2969C97200DBD5ED;
+					};
+				};
+			};
+			buildConfigurationList = 0CDCD9072969C97200DBD5ED /* Build configuration list for PBXProject "Steadi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CDCD9032969C97200DBD5ED;
+			packageReferences = (
+				0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
+			productRefGroup = 0CDCD90D2969C97200DBD5ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CDCD90B2969C97200DBD5ED /* Steadi */,
+				0CDCD91B2969C97400DBD5ED /* SteadiTests */,
+				0CDCD9252969C97400DBD5ED /* SteadiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CDCD90A2969C97200DBD5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDCD9172969C97400DBD5ED /* Preview Assets.xcassets in Resources */,
+				0CDCD9142969C97400DBD5ED /* Assets.xcassets in Resources */,
+				2C8E86572CBF49D99689941B /* awsconfiguration.json in Resources */,
+				54E14174FF01F62A659475E1 /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CDCD91A2969C97400DBD5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CDCD9242969C97400DBD5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CDCD9082969C97200DBD5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CE39D0229F067F600809491 /* UserController.swift in Sources */,
+				0CEE54AB29F0490E00748A60 /* JournalEntry.swift in Sources */,
+				0CDCD9122969C97200DBD5ED /* ContentView.swift in Sources */,
+				0CDCD9102969C97200DBD5ED /* SteadiApp.swift in Sources */,
+				0CEE54A829EF723C00748A60 /* UserView.swift in Sources */,
+				0CEE54A429EF6E8B00748A60 /* User.swift in Sources */,
+				0CEE54AE29F04AF100748A60 /* JournalEntryView.swift in Sources */,
+				0CEE54B029F04D4200748A60 /* CreateAccountView.swift in Sources */,
+				0CEE54A629EF70A700748A60 /* LoginView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CDCD9182969C97400DBD5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDCD9212969C97400DBD5ED /* SteadiMVPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CDCD9222969C97400DBD5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDCD92D2969C97400DBD5ED /* SteadiMVPUITestsLaunchTests.swift in Sources */,
+				0CDCD92B2969C97400DBD5ED /* SteadiMVPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CDCD91E2969C97400DBD5ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CDCD90B2969C97200DBD5ED /* Steadi */;
+			targetProxy = 0CDCD91D2969C97400DBD5ED /* PBXContainerItemProxy */;
+		};
+		0CDCD9282969C97400DBD5ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CDCD90B2969C97200DBD5ED /* Steadi */;
+			targetProxy = 0CDCD9272969C97400DBD5ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CDCD92E2969C97400DBD5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CDCD92F2969C97400DBD5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CDCD9312969C97400DBD5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Steadi/Preview Content\"";
+				DEVELOPMENT_TEAM = NZ27VVT4E3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jay.Steadi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CDCD9322969C97400DBD5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Steadi/Preview Content\"";
+				DEVELOPMENT_TEAM = NZ27VVT4E3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jay.Steadi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0CDCD9342969C97400DBD5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jay.SteadiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steadi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Steadi";
+			};
+			name = Debug;
+		};
+		0CDCD9352969C97400DBD5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jay.SteadiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steadi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Steadi";
+			};
+			name = Release;
+		};
+		0CDCD9372969C97400DBD5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jay.SteadiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Steadi;
+			};
+			name = Debug;
+		};
+		0CDCD9382969C97400DBD5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jay.SteadiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Steadi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CDCD9072969C97200DBD5ED /* Build configuration list for PBXProject "Steadi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDCD92E2969C97400DBD5ED /* Debug */,
+				0CDCD92F2969C97400DBD5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CDCD9302969C97400DBD5ED /* Build configuration list for PBXNativeTarget "Steadi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDCD9312969C97400DBD5ED /* Debug */,
+				0CDCD9322969C97400DBD5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CDCD9332969C97400DBD5ED /* Build configuration list for PBXNativeTarget "SteadiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDCD9342969C97400DBD5ED /* Debug */,
+				0CDCD9352969C97400DBD5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CDCD9362969C97400DBD5ED /* Build configuration list for PBXNativeTarget "SteadiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDCD9372969C97400DBD5ED /* Debug */,
+				0CDCD9382969C97400DBD5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0CE39CEF29F066DC00809491 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		0CE39CF129F066DC00809491 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		0CE39CF329F066DC00809491 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		0CE39CF529F066DC00809491 /* AWSPinpointAnalyticsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointAnalyticsPlugin;
+		};
+		0CE39CF729F066DC00809491 /* AWSPinpointPushNotificationsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointPushNotificationsPlugin;
+		};
+		0CE39CF929F066DC00809491 /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
+		};
+		0CE39CFB29F066DC00809491 /* AWSPredictionsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPredictionsPlugin;
+		};
+		0CE39CFD29F066DC00809491 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+		0CE39CFF29F066DC00809491 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE39CEE29F066DC00809491 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0CDCD9042969C97200DBD5ED /* Project object */;
+}

@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-steadi-dev-125855-authRole",
+      "UnauthRoleArn": "arn:aws:iam::477419570711:role/amplify-steadi-dev-125855-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::477419570711:role/amplify-steadi-dev-125855-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-steadi-dev-125855-deployment",
+      "UnauthRoleName": "amplify-steadi-dev-125855-unauthRole",
+      "StackName": "amplify-steadi-dev-125855",
+      "StackId": "arn:aws:cloudformation:us-east-1:477419570711:stack/amplify-steadi-dev-125855/dac23c40-dedb-11ed-a263-0a399bf1e80f",
+      "AmplifyAppId": "d2btil0tdiwwlg",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-steadi-dev-125855-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "userLambda1": {
+          "deploymentBucketName": "amplify-steadi-dev-125855-deployment",
+          "s3Key": "amplify-builds/userLambda1-77466d4d7952794d7872-build.zip"
+        }
+      },
+      "auth": {
+        "steadi": {}
+      },
+      "api": {
+        "api9db7ac8c": {}
+      }
+    }
+  }
+}
